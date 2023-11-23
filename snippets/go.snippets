@@ -1,0 +1,10 @@
+snippet wth "with setter (fluent interface)"
+	func ($1 *$2) With$3(val $4) *$2 {
+		$1.$5 = val
+		return $1
+	}
+
+snippet flg "fluent getter"
+	func ($1 *$2) $3() $4 {
+			return $1.$5
+	}
